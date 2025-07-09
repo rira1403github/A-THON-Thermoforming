@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto;">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h1>🛠️ A-THON Thermoforming</h1>
+  <p>
+    A responsive and visually dynamic website built to showcase the capabilities, products, and services of 
+    <strong>A-THON Thermoforming</strong>, a company specializing in plastic thermoforming solutions. 
+    This project highlights modern web development practices with React, animations, and interactive user experience.
+  </p>
 
-## Available Scripts
+  <p>
+    🔗 <strong><a href="https://a-thon-thermoforming.vercel.app/" target="_blank">Live Demo</a></strong>
+  </p>
 
-In the project directory, you can run:
+  <h2>✨ Features</h2>
+  <ul>
+    <li>Hero Section with animated text and CTA</li>
+    <li>About & Product Showcase with responsive design and image galleries</li>
+    <li>Services & Manufacturing Capabilities with AOS scroll animations</li>
+    <li>Image Gallery with zoom-on-hover, lightbox popup, and thumbnails</li>
+    <li>Contact & Footer with clickable links and mobile-friendly layout</li>
+    <li>Fully mobile-responsive and optimized for modern browsers</li>
+  </ul>
 
-### `npm start`
+  <h2>🧰 Tech Stack</h2>
+  <ul>
+    <li><strong>Frontend:</strong> React.js, JSX</li>
+    <li><strong>Styling:</strong> CSS, Tailwind CSS (if used), AOS (Animate On Scroll)</li>
+    <li><strong>Deployment:</strong> Vercel</li>
+  </ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <h2>📂 Project Structure</h2>
+  <pre><code>/src
+  ├── components      // Reusable components (Navbar, Footer, etc.)
+  ├── pages           // Page sections like Home, Products, Experience
+  ├── assets          // Images and icons
+  └── App.js          // Main component
+  </code></pre>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <h2>🚀 Getting Started (Local Setup)</h2>
+  <pre><code># Clone the repository
+git clone https://github.com/your-username/a-thon-thermoforming.git
 
-### `npm test`
+# Navigate into the project directory
+cd a-thon-thermoforming
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install dependencies
+npm install
 
-### `npm run build`
+# Run the development server
+npm start
+  </code></pre>
+  <p>Visit <code>http://localhost:3000</code> to view the app locally.</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <h2>✍️ Author</h2>
+  <p>
+    <strong>Ritik Raj</strong><br>
+    📫 <a href="mailto:ritikraj1403@gmail.com">ritikraj1403@gmail.com</a><br>
+    🔗 <a href="https://ritik-portfolio-dun.vercel.app/" target="_blank">Portfolio</a> | 
+    <a href="https://github.com/rira1403github" target="_blank">GitHub</a>
+  </p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <h2>📄 License</h2>
+  <p>This project is licensed under the MIT License.</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</body>
+</html>
