@@ -1,0 +1,221 @@
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 80px 40px; /* Matches other sections */
+  font-family: 'Raleway', sans-serif;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Brand Title & Subtitle */
+.brand-title {
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: white;
+  display: inline-block;
+  text-align: left;
+  font-family: 'Jost', sans-serif;
+}
+
+.brand-title small {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.65rem;
+  display: block;
+  margin-top: 5px;
+  color: #ccc;
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Logo Wrapper */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 96px;
+  height: 82px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover img {
+  transform: rotate(45deg) scale(1.1);
+}
+
+/* Divider Line */
+.footer-divider {
+  border-top: 1px solid white;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/* Main Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Column Styles */
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+/* Left Column */
+.footer-left p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Middle Column */
+.footer-middle p {
+  margin: 10px 0;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+
+.footer-middle h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 150%;
+  letter-spacing: 0.4rem;
+}
+
+/* Right Column (Icons/Social Links) */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-right a {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-right a:hover {
+  transform: scale(1.2);
+  color: #00ffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Tooltip for Icons */
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  background: #ffffff;
+  color: #000;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer-right a {
+    margin: 6px;
+  }
+
+  .footer-middle h4 {
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+  }
+
+  .brand-title {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .brand-title small {
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 60px 20px;
+  }
+
+  .footer-middle p,
+  .footer-left p {
+    font-size: 14px;
+  }
+
+  .footer-middle h4 {
+    font-size: 16px;
+  }
+
+  .footer-right {
+  gap: 10px;
+}
+
+  .footer-right a {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}

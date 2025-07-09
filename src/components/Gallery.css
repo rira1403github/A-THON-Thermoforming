@@ -1,0 +1,85 @@
+.gallery-section {
+  background-color: #000;
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+  font-family: 'raleway', sans-serif;
+  max-width: none;
+}
+
+.gallery-section h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gallery-display {
+  position: relative;
+  max-width: none;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+
+.gallery-main-image {
+
+  width: 1400px;
+  height: 651px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.gallery-main-image:hover {
+  transform: scale(1.55);
+}
+
+.gallery-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.gallery-controls button {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.gallery-controls button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gallery-thumbnails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-thumbnails img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.gallery-thumbnails img:hover,
+.gallery-thumbnails img.active {
+  opacity: 1;
+  transform: scale(1.1);
+  border: 2px solid #00bfff;
+}

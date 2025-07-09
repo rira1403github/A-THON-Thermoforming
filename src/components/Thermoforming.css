@@ -1,0 +1,105 @@
+.thermo-section {
+  background-color: #fff;
+  color: black;
+  padding: 60px 20px; 
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.thermo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.thermo-left .image-placeholder {
+  width: 700px;
+  height: 580px;
+  background-color: black;
+  border-radius: 12px;
+}
+
+.thermo-right {
+  max-width: 580px;
+  max-height: 380px;
+}
+
+.thermo-right h2 {
+  line-height: 1.2;
+  font-size: 38px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thermo-right p {
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing:1px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .thermo-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .thermo-left .image-placeholder {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .thermo-right {
+    max-width: 100%;
+    max-height: none;
+    padding: 0 20px;
+  }
+
+  .thermo-right h2 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .thermo-right p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .thermo-section {
+    padding: 60px 20px;
+  }
+
+  .thermo-right h2 {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+
+  .thermo-right p {
+    font-size: 16px;
+  }
+
+  .thermo-left .image-placeholder {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 2;
+  }
+
+
+}

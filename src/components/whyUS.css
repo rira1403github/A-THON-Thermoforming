@@ -1,0 +1,141 @@
+/* Base Section Container */
+.whyus-section {
+  padding: 80px 40px; 
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: all 0.8s ease;
+  background-color: #fff;
+  color: black;
+}
+
+/* When visible with AOS or manual toggle */
+.whyus-section.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Section Title */
+.whyus-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 42.32px;
+  letter-spacing: 2.78px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Animated individual letters (optional) */
+.animated-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.4s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Image Container */
+.whyus-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Main Image */
+.whyus-image {
+  width: 920px;
+  height: 547px;
+  border: 2px solid #1e90ff;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.whyus-image:hover {
+  transform: scale(1.02);
+}
+
+/* Description Text */
+.whyus-description {
+  font-size: 20px;
+  line-height: 42.32px;
+  max-width: 950px;
+  margin: 0 auto 30px;
+  color: black;
+  letter-spacing: 2.5px;
+}
+
+/* Call-To-Action Button */
+.cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  color: black;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cta-button:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .whyus-section {
+    padding: 60px 30px;
+  }
+
+  .whyus-title {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+
+  .whyus-description {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 10px;
+    letter-spacing: 1.2px;
+  }
+
+  .whyus-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta-button {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whyus-section {
+    padding: 50px 20px;
+  }
+
+  .whyus-title {
+    font-size: 20px;
+  }
+
+  .whyus-description {
+    font-size: 15px;
+  }
+}
