@@ -6,7 +6,6 @@ import 'yet-another-react-lightbox/styles.css';
 const images = [
   '/gallery/img1.jpg',
   '/gallery/img2.png',
-  '/gallery/img3.png',
   '/gallery/img4.png',
   '/gallery/img5.png',
 ];

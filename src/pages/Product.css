@@ -84,6 +84,10 @@
   transform: translateY(30px);
 }
 
+.product-text p li {
+  text-align: left;
+}
+
 .product-card.aos-animate {
   opacity: 1;
   transform: translateY(0);
@@ -298,6 +302,9 @@
 @media (max-width: 480px) {
   .product-card {
     padding: 20px 15px;
+  }
+  .product-text-head h2 {
+    font-size: 24px;
   }
   .product-text h2 {
     font-size: 20px;

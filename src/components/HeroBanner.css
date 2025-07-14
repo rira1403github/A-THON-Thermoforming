@@ -51,7 +51,7 @@
 @media (max-width: 768px) {
   .hero-overlay h1 {
     font-size: 24px;
-    padding: 10px 20px;
+    padding: 0px;
   }
 
   .hero-banner {
@@ -61,7 +61,12 @@
 
 @media (max-width: 480px) {
   .hero-overlay h1 {
-    font-size: 20px;
+    font-size: 12px;
+    padding: 0px;
+  }
+
+  .hero-overlay {
+    bottom: 20px;
   }
 
   .hero-banner {

@@ -18,7 +18,7 @@ const Thermoforming = () => {
         <div className="thermo-right" data-aos="fade-left">
           <h2>A-THON THERMOFORMING</h2>
           <p>
-            A-THON Plastics is a specialized division of<br /> A-THON ALLTERRAIN PVT. LTD.<br /> India’s first homegrown all-terrain vehicle company.
+            A-THON Plastics is a specialized division of<br /> A-THON ALLTERRAIN PVT. LTD.
           <br />
             We manufacture high-quality thermoformed plastic parts for our own utility vehicles and provide custom plastic solutions and job work services across industries like automotive, medical, and packaging.
           </p>

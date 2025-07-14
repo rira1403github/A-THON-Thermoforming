@@ -69,15 +69,10 @@ const Navbar = () => {
             className={location.pathname.startsWith('/about') ? 'active' : ''}
             onClick={handleNavClick}
           >ABOUT US </Link>
-          {/* <ul className="dropdown-menu">
-            <li>
-              <Link to="/about/team" onClick={handleNavClick}>Our Team</Link>
-            </li>
-            <li>
-              <Link to="/about/vision" onClick={handleNavClick}>Vision</Link>
-            </li>
-          </ul> */}
         </li>
+        <li className="mobile-contact">
+          <Link to="/contact" onClick={handleNavClick}>CONTACT US</Link>
+          </li>
       </ul>
 
       {/* CONTACT Button for desktop */}

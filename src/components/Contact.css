@@ -5,6 +5,7 @@
   font-family: 'raleway', sans-serif;
   max-width: none;
   overflow-x: hidden;
+  align-items: center;
 }
 
 .contact-container {
@@ -136,6 +137,8 @@
 }
 
 @media (max-width: 480px) {
+
+
   .contact-form-container h2 {
     font-size: 28px;
   }

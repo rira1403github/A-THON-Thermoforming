@@ -36,11 +36,17 @@ const Products = () => {
             </div>
             <div className="product-text">
               <h3>VACUUM FORMING</h3>
-              <p>Vacuum forming is a key thermoforming process where heated plastic sheets are shaped over molds using vacuum pressure. It is ideal for creating lightweight, durable, and cost-effective plastic parts with consistent quality and detail—perfect for both prototypes and large-scale production.</p>
-              <h3>DRAPE FORMING</h3>
-              <p>Drape forming involves heating a plastic sheet and manually draping it over a mold to achieve complex curves and contours. This method is ideal for producing smooth, seamless parts with minimal tooling, often used in medical, aerospace, and display applications.</p>
-              <h3>FREE FLOW FORMING</h3>
-              <p>Free flow forming allows heated plastic sheets to naturally sag or flow into a mold without vacuum or pressure. This technique is perfect for creating organic, smooth shapes with uniform thickness—commonly used in lighting, domes, and artistic applications.</p>
+              <p>Vacuum forming delivers precise, high-quality plastic components tailored for performance and visual appeal. Known for its consistency, speed, and versatility, it's the trusted choice for both prototypes and large-scale production.</p>
+              <h3>Key Highlights:</h3>
+              <p>
+              <ul>
+                <li>Premium-quality part production</li>
+                <li>High detail and dimensional consistency</li>
+                <li>Scalable for low to high volumes</li>
+                <li>Ideal for industrial and commercial applications</li>
+                <li>Reliable, repeatable, and cost-effective</li>
+              </ul>
+              </p>
             </div>
           </div>
 
