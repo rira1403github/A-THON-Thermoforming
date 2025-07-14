@@ -4,6 +4,7 @@
   padding: 80px 60px;
   font-family: 'raleway', sans-serif;
   max-width: none;
+  overflow-x: hidden;
 }
 
 .contact-container {

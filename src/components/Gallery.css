@@ -5,6 +5,7 @@
   text-align: center;
   font-family: 'raleway', sans-serif;
   max-width: none;
+  overflow-x: hidden;
 }
 
 .gallery-section h2 {

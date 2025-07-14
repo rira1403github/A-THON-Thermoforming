@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 // import React, { useEffect, useRef, useState } from 'react';
 // import './whyUS.css';
 
@@ -66,7 +65,6 @@
 
 
 
->>>>>>> second commit
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './whyUS.css';
