@@ -84,12 +84,12 @@ const Products = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="product-card two-column reverse">
+                  <div className="product-img">
+                    <img src="/Products&Services/PT&AT.jpeg" alt="Proto Tooling" />
+                  </div>
                   <div className="product-text">
                     <h3>PROTO-TOOLING & ALUMINIUM TOOLING</h3>
                     <p>Proto-tooling enables quick, cost-effective prototyping and low-volume production for rapid design validation. Aluminium tooling offers durable, high-precision molds ideal for medium to high-volume manufacturing, delivering consistent quality, faster cycles, and excellent thermal performance.</p>
-                  </div>
-                  <div className="product-img">
-                    <img src="/Products&Services/PT&AT.jpeg" alt="Proto Tooling" />
                   </div>
                 </div>
               </SwiperSlide>
@@ -144,12 +144,12 @@ const Products = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="product-card two-column">
+                  <div className="product-img">
+                    <img src="/Products&Services/A&P.jpeg" alt="Assembly Packaging" />
+                  </div>
                   <div className="product-text">
                     <h3>ASSEMBLY & PACKAGING</h3>
                     <p>We provide complete assembly and packaging solutions to streamline your supply chain. From component fitting to custom packaging, we ensure that your thermoformed parts are delivered ready for use—saving you time, effort, and resources.</p>
-                  </div>
-                  <div className="product-img">
-                    <img src="/Products&Services/A&P.jpeg" alt="Assembly Packaging" />
                   </div>
                 </div>
               </SwiperSlide>

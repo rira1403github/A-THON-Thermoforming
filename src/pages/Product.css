@@ -208,6 +208,10 @@
     transform: none !important;
   }
 
+  .product-text {
+  margin: 15px;
+}
+
   .swiper-slide {
     min-height: 100px;
     display: flex !important;
@@ -222,8 +226,11 @@
   }
 
   .product-card img {
+    margin: 20px 0px 15px 0px;
     width: 100%;
-    max-width: 95%;
-    height: 200px;
+    padding: 10px 15px 10px 10px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 4px;
   }
 }
