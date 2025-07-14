@@ -1,3 +1,6 @@
+/* ===================
+   General Section
+=================== */
 .products-section {
   background-color: #fff;
   color: black;
@@ -18,7 +21,6 @@
   background: linear-gradient(90deg, #000000, #444);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative;
   animation: fadeSlideDown 1.2s ease-in-out both;
 }
 
@@ -31,7 +33,9 @@
   animation: expandLine 0.8s ease-in-out forwards;
 }
 
-/* Grid Container */
+/* ===================
+   Grid Container
+=================== */
 .products-grid {
   background-color: black;
   display: flex;
@@ -44,19 +48,6 @@
   box-sizing: border-box;
 }
 
-.product-brief h3 {
-  font-size: 37px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-align: left;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #fff;
-  color: #fff;
-  position: relative;
-  animation: fadeSlideLeft 1.2s ease;
-}
-
 .product-brief p {
   font-size: 24px;
   font-weight: 400;
@@ -66,7 +57,21 @@
   animation: slideInLeft 0.6s ease-out forwards;
 }
 
-/* Product Card */
+.product-brief h3 {
+  font-size: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+  animation: fadeSlideLeft 1.2s ease;
+}
+
+/* ===================
+   Product Card
+=================== */
 .product-card {
   display: flex;
   align-items: center;
@@ -79,13 +84,12 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   flex-wrap: wrap;
-  overflow: hidden;
   opacity: 0;
   transform: translateY(30px);
 }
 
-.product-text p li {
-  text-align: left;
+.product-card.reverse {
+  flex-direction: row-reverse;
 }
 
 .product-card.aos-animate {
@@ -93,16 +97,11 @@
   transform: translateY(0);
 }
 
-.product-card.reverse {
-  flex-direction: row-reverse;
-}
-
 .product-card:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Image Hover Effect */
 .product-card img {
   width: 100%;
   max-width: 500px;
@@ -118,7 +117,9 @@
   filter: brightness(1.1) contrast(1.05);
 }
 
-/* Text Block */
+/* ===================
+   Text Section
+=================== */
 .product-text {
   flex: 1;
   text-align: left;
@@ -146,7 +147,37 @@
   color: #333;
 }
 
-/* Floating Action Buttons */
+/* ===================
+   Swiper Styles
+=================== */
+.product-swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.swiper-pagination-bullets {
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* ===================
+   Floating Buttons
+=================== */
 .floating-buttons {
   position: fixed;
   right: 20px;
@@ -175,7 +206,9 @@
   background-color: #1e90ff;
 }
 
-/* Keyframe Animations */
+/* ===================
+   Animations
+=================== */
 @keyframes expandLine {
   from {
     width: 0;
@@ -193,18 +226,6 @@
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -252,17 +273,14 @@
   }
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
   .products-title {
     font-size: 42px;
   }
-  .product-card {
-    flex-direction: column;
-    text-align: center;
-  }
+  .product-card,
   .product-card.reverse {
     flex-direction: column;
+    text-align: center;
   }
   .product-text {
     text-align: center;
@@ -282,7 +300,7 @@
   .products-title {
     font-size: 36px;
   }
-  .product-text h2 {
+  .product-text-head h2 {
     font-size: 24px;
   }
   .product-text h3 {
@@ -303,10 +321,8 @@
   .product-card {
     padding: 20px 15px;
   }
+  .product-text h2,
   .product-text-head h2 {
-    font-size: 24px;
-  }
-  .product-text h2 {
     font-size: 20px;
   }
   .product-text h3 {

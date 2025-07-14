@@ -1,7 +1,7 @@
 .industries-section {
   background-color: #fff;
   color: black;
-  padding: 80px 40px; /* Matches footer horizontal padding */
+  padding: 80px 40px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   width: 100%;
@@ -14,7 +14,6 @@
   font-weight: 700;
   margin-bottom: 40px;
   letter-spacing: 2.7px;
-  vertical-align: middle;
   line-height: 43px;
 }
 
@@ -23,12 +22,18 @@
   color: white;
   border-radius: 14px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  padding: 50px 40px; /* Matches section padding */
-  width: 100%;
+  padding: 50px 40px;
   box-sizing: border-box;
-  margin: 0 auto;
+}
+
+.industries-swiper {
+  background-color: black;
+  border-radius: 14px;
+  color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .industry-item {
@@ -38,8 +43,8 @@
   gap: 15px;
   padding: 20px;
   border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -67,23 +72,47 @@
   opacity: 0.8;
 }
 
-/* Responsive Design */
+/* Swiper pagination styling */
+.swiper-pagination-bullets {
+  margin-top: 20px;
+}
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Responsive grid */
+@media (max-width: 1024px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .industries-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     padding: 40px 30px;
   }
+
+  .industry-item img {
+    width: 110px;
+    height: 110px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .industries-grid {
-    grid-template-columns: 1fr;
-    padding: 40px 20px;
+    display: none;
   }
 
   .industry-item img {
-    width: 105px;
-    height: 105px;
+    width: 100px;
+    height: 100px;
   }
 }
