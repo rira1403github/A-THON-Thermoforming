@@ -1,6 +1,4 @@
-/* ===================
-   General Section
-=================== */
+/* Product.css */
 .products-section {
   background-color: #fff;
   color: black;
@@ -24,18 +22,6 @@
   animation: fadeSlideDown 1.2s ease-in-out both;
 }
 
-.title-underline {
-  width: 100px;
-  height: 4px;
-  background-color: black;
-  margin: 0 auto 50px;
-  border-radius: 3px;
-  animation: expandLine 0.8s ease-in-out forwards;
-}
-
-/* ===================
-   Grid Container
-=================== */
 .products-grid {
   background-color: black;
   display: flex;
@@ -48,48 +34,22 @@
   box-sizing: border-box;
 }
 
-.product-brief p {
-  font-size: 24px;
-  font-weight: 400;
-  color: #fff;
-  line-height: 1.6;
-  text-align: center;
-  animation: slideInLeft 0.6s ease-out forwards;
-}
-
-.product-brief h3 {
-  font-size: 37px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-align: left;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #fff;
-  color: #fff;
-  animation: fadeSlideLeft 1.2s ease;
-}
-
-/* ===================
-   Product Card
-=================== */
 .product-card {
+  opacity: 0;
+  transform: translateY(30px);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 40px;
   background: #fff;
   border-radius: 16px;
   padding: 40px;
   width: 100%;
+  height: auto;
   max-width: 1200px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  flex-wrap: wrap;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.product-card.reverse {
-  flex-direction: row-reverse;
+  object-fit: cover;
 }
 
 .product-card.aos-animate {
@@ -97,16 +57,14 @@
   transform: translateY(0);
 }
 
-.product-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+.product-card.reverse {
+  flex-direction: row-reverse;
 }
 
 .product-card img {
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
-  flex: 1;
   object-fit: cover;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s ease, filter 0.5s ease;
@@ -117,21 +75,10 @@
   filter: brightness(1.1) contrast(1.05);
 }
 
-/* ===================
-   Text Section
-=================== */
 .product-text {
   flex: 1;
   text-align: left;
   animation: fadeSlideRight 1.2s ease;
-}
-
-.product-text-head h2 {
-  text-align: center;
-  font-size: 37px;
-  font-weight: 700;
-  color: #fff;
-  animation: fadeSlideUp 1s ease both;
 }
 
 .product-text h3 {
@@ -147,22 +94,33 @@
   color: #333;
 }
 
-/* ===================
-   Swiper Styles
-=================== */
+.product-brief p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.product-text-head h2 {
+  text-align: center;
+  font-size: 37px;
+  font-weight: 700;
+  color: #fff;
+  animation: fadeSlideUp 1s ease both;
+}
+
 .product-swiper {
   width: 100%;
   padding: 20px 0;
+  min-height: 100px;
 }
 
 .swiper-slide {
-  display: flex;
+  display: flex !important;
   justify-content: center;
-  padding: 10px 0;
-}
-
-.swiper-pagination-bullets {
-  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100px; 
 }
 
 .swiper-pagination-bullet {
@@ -175,59 +133,11 @@
   opacity: 1;
 }
 
-/* ===================
-   Floating Buttons
-=================== */
-.floating-buttons {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 999;
+.swiper {
+  width: 100%;
+  height: auto;
 }
 
-.floating-buttons a {
-  background-color: #000;
-  color: white;
-  padding: 12px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease;
-}
-
-.floating-buttons a:hover {
-  background-color: #1e90ff;
-}
-
-/* ===================
-   Animations
-=================== */
-@keyframes expandLine {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100px;
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
 @keyframes fadeSlideDown {
   from {
@@ -237,17 +147,6 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes fadeSlideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 
@@ -273,62 +172,58 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .products-title {
-    font-size: 42px;
+    font-size: 36px;
   }
+
   .product-card,
   .product-card.reverse {
     flex-direction: column;
     text-align: center;
+    padding: 0px 10px;
+    margin-bottom: 10px;
   }
+
   .product-text {
     text-align: center;
   }
-}
 
-@media (max-width: 768px) {
-  .products-section {
-    padding: 40px 20px;
-  }
-  .product-brief h3 {
-    font-size: 30px;
-  }
-  .product-brief p {
-    font-size: 18px;
-  }
-  .products-title {
-    font-size: 36px;
-  }
-  .product-text-head h2 {
-    font-size: 24px;
-  }
   .product-text h3 {
     font-size: 20px;
   }
+
   .product-text p {
     font-size: 16px;
   }
-  .product-card img {
-    max-width: 100%;
-  }
-  .title-underline {
-    width: 60px;
+
+  .product-text-head h2 {
+    font-size: 28px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
+  .swiper-slide .product-card {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .swiper-slide {
+    min-height: 100px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .product-card {
-    padding: 20px 15px;
+    flex-direction: column;
+    text-align: center;
   }
-  .product-text h2,
-  .product-text-head h2 {
-    font-size: 20px;
-  }
-  .product-text h3 {
-    font-size: 18px;
-  }
-  .product-text p {
-    font-size: 14px;
+
+  .product-card img {
+    width: 100%;
+    max-width: 95%;
+    height: 200px;
   }
 }

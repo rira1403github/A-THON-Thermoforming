@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import './Product.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -21,7 +22,7 @@ const Products = () => {
   return (
     <>
       <section className="products-section" id="products">
-        <div className='products-title-container'>
+        <div className="products-title-container">
           <h2 className="products-title" data-aos="fade-up">PRODUCTS & SERVICES</h2>
         </div>
 
@@ -33,6 +34,7 @@ const Products = () => {
             </p>
           </div>
 
+          {/* THERMOFORMING PROCESSES */}
           <div className="product-text-head">
             <h2>THERMOFORMING PROCESSES</h2>
           </div>
@@ -55,6 +57,7 @@ const Products = () => {
             </div>
           </div>
 
+          {/* CUSTOM PARTS & TOOLING */}
           <div className="product-text-head">
             <h2>CUSTOM PARTS & TOOLING</h2>
           </div>
@@ -114,6 +117,7 @@ const Products = () => {
             </>
           )}
 
+          {/* PRODUCTION & SUPPORT SERVICES */}
           <div className="product-text-head">
             <h2>PRODUCTION & SUPPORT SERVICES</h2>
           </div>
