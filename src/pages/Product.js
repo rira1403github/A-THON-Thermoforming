@@ -47,13 +47,15 @@ const Products = () => {
               <h3>VACUUM FORMING</h3>
               <p>Vacuum forming delivers precise, high-quality plastic components tailored for performance and visual appeal. Known for its consistency, speed, and versatility, it's the trusted choice for both prototypes and large-scale production.</p>
               <h3>Key Highlights:</h3>
-              <ul>
+              <p>
+              <ul> 
                 <li>Premium-quality part production</li>
                 <li>High detail and dimensional consistency</li>
                 <li>Scalable for low to high volumes</li>
                 <li>Ideal for industrial and commercial applications</li>
                 <li>Reliable, repeatable, and cost-effective</li>
               </ul>
+              </p>
             </div>
           </div>
 
