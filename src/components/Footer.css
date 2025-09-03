@@ -3,6 +3,8 @@
   color: white;
   padding: 30px 50px;
   font-family: "Raleway", sans-serif;
+  max-width: 1440px;
+  margin: auto
 }
 
 .footer-container {
