@@ -168,7 +168,7 @@
   overflow-x: hidden;
   max-width: 1440px;
   margin: auto;
-  width: 100%;
+  overflow-x: hidden;
 }
 
 .gallery-section h2 {
@@ -245,6 +245,15 @@
   
   .gallery-cards-container .SwiperSlide {
     background-color:#F5F7FA;
+  }
+
+  .gallery-card {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .gallery-icon img{
+    height: 300px;
   }
 }
 

@@ -10,6 +10,7 @@
   overflow: hidden;
   text-align: center;
   position: relative;
+  overflow-x: hidden;
 }
 
 .explore-container {
@@ -78,6 +79,15 @@
   .explore-container img {
     height: 40vh;
     object-fit: cover;
+  }
+
+  .explore-section {
+    margin: auto;
+  }
+
+  .explore-container {
+    width: 95%;
+    margin: auto;
   }
 
   .explore-container h2 {

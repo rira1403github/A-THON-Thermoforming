@@ -211,3 +211,10 @@
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  .navbar-logo img {
+    width: 200px;
+    height: 38px;
+  }
+}

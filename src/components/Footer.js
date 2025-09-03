@@ -127,13 +127,6 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-         <div className="footer-copy">
-        <p>
-          © 2025. A-THON ALLTERRIAN PVT. LTD. All Rights Reserved.
-          <br />
-          CIN: U34100KA2022PTC1S1300
-        </p>
-      </div>
 
         <div className="footer-email">
           <h4>REACH US ON</h4>
@@ -177,6 +170,13 @@ const Footer = () => {
             <FaFacebookF />
           </a>
         </div>
+      </div>
+        <div className="footer-copy">
+        <p>
+          © 2025. A-THON ALLTERRIAN PVT. LTD. All Rights Reserved.
+          <br />
+          CIN: U34100KA2022PTC1S1300
+        </p>
       </div>
     </footer>
   );

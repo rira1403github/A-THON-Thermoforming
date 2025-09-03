@@ -159,11 +159,13 @@
 }
 
 .footer-copy {
-  text-align: left;
   margin-top: 20px;
   font-size: 13px;
   color: #ccc;
   line-height: 1.5;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 @media (max-width: 768px) {
@@ -217,6 +219,11 @@
     text-align: center !important;
     align-items: center !important;
     justify-content: center !important;
-    flex-direction: column-reverse;
+  }
+
+  .footer-copy {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
