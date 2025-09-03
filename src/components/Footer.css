@@ -1,10 +1,15 @@
 .footer {
   background-color: #072a33;
   color: white;
-  padding: 30px 50px;
+  padding: 30px 10px;
   font-family: "Raleway", sans-serif;
   max-width: 1440px;
-  margin: auto
+  margin: auto;
+  overflow-x: hidden;
+
+  text-align: justify;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .footer-container {
