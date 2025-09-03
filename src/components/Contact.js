@@ -55,7 +55,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-form-container" data-aos="fade-left">
-          <h2>CONTACT</h2>
+          <h2>CONTACT US</h2>
           <h3>FOR INQUIRIES</h3>
           <p>
             For any inquiries, questions or commendations, please email or fill out the following form.
@@ -80,25 +80,23 @@ const Contact = () => {
               required
             />
 
-            <label htmlFor="subject">ENTER YOUR SUBJECT</label>
+            <label htmlFor="subject">SERVICE INTEREST</label>
             <input
               type="text"
               id="subject"
               name="subject"
-              placeholder="Subject"
+              placeholder="SELECT A SERVICE"
               required
             />
 
-            <label htmlFor="message">ENTER YOUR MESSAGE</label>
             <textarea
               id="message"
               name="message"
-              placeholder="Message"
+              placeholder="PROJECT DETAILS"
               rows="5"
               required
             />
-
-            <button type="submit">Submit</button>
+            <button type="submit">GET A FREE QUOTE</button>
           </form>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Thermoforming.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import mainImage from '../assets/main_image.webp';
 
 const Thermoforming = () => {
   useEffect(() => {
@@ -11,11 +12,8 @@ const Thermoforming = () => {
   return (
     <section className="thermo-section" id="thermoforming">
       <div className="thermo-container">
-        <div className="thermo-left" data-aos="fade-right">
-          {/* Replace this div with actual image of video */}
-          <div className="image-placeholder"></div>
-        </div>
-        <div className="thermo-right" data-aos="fade-left">
+            <img src={mainImage}></img>
+        <div className="thermo-overlay" data-aos="fade-up">
           <h2>A-THON THERMOFORMING</h2>
           <p>
             A-THON Plastics is a specialized division of<br /> A-THON ALLTERRAIN PVT. LTD.

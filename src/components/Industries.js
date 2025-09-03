@@ -4,14 +4,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import img1 from '../assets/industries/car.webp';
+import img2 from '../assets/industries/medical.webp';
+import img3 from '../assets/industries/packaging.webp';
+import img4 from '../assets/industries/electronics.webp';
+import img5 from '../assets/industries/goods.webp';
+import img6 from '../assets/industries/projects.webp';
 
 const industriesData = [
-  { icon: '/icons/automobile.png', title: 'AUTOMOBILE' },
-  { icon: '/icons/medical.png', title: 'MEDICAL' },
-  { icon: '/icons/packaging.png', title: 'PACKAGING' },
-  { icon: '/icons/electronics.png', title: 'ELECTRONICS' },
-  { icon: '/icons/consume.png', title: 'CONSUMER GOODS' },
-  { icon: '/icons/custom.png', title: 'CUSTOMIZED PROJECTS' },
+  { icon: img1, title: 'AUTOMOBILE' },
+  { icon: img2, title: 'MEDICAL' },
+  { icon: img3, title: 'PACKAGING' },
+  { icon: img4, title: 'ELECTRONICS' },
+  { icon: img5, title: 'CONSUMER GOODS' },
+  { icon: img6, title: 'CUSTOMIZED PROJECTS' },
 ];
 
 const Industries = () => {

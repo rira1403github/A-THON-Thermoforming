@@ -1,0 +1,97 @@
+.explore-section {
+  background-color: #fff;
+  color: #000;
+  background-color: #0A2934;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  padding: 2rem 0;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.explore-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.explore-container h2 {
+  font-size: clamp(22px, 4vw, 40px);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.explore-container p {
+  font-size: clamp(14px, 2.2vw, 20px);
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+
+.download-btn {
+  margin: auto;
+  background: #C12525;
+  font-size: 18px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 2rem;
+  width: 300px;
+  height: 50px;
+}
+
+.download-btn:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .explore-container img {
+    height: 70vh;
+  }
+
+  .explore-container h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .explore-container p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-container img {
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .explore-container h2 {
+    font-size: 20px;
+  }
+
+  .explore-container p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  
+  .download-btn {
+    font-size: 12px;
+    width: 200px;
+    height: 40px;
+  }
+}

@@ -20,7 +20,7 @@
   bottom: 50px;
   left: 46%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  background: rgba(0, 0, 0, 0.5);
   padding: 16px 20px;
   border-radius: 8px;
   text-align: center;

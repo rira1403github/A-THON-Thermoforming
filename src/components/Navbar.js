@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
   const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation(); // 🔁 Get current path
+  const location = useLocation(); 
 
   const lastScrollTop = useRef(0);
 
@@ -13,9 +13,9 @@ const Navbar = () => {
     const handleScroll = () => {
       const st = window.pageYOffset || document.documentElement.scrollTop;
       if (st > lastScrollTop.current && st > 100) {
-        setHidden(true); // Scroll down → hide navbar
+        setHidden(true); 
       } else {
-        setHidden(false); // Scroll up → show navbar
+        setHidden(false); 
       }
       lastScrollTop.current = st <= 0 ? 0 : st;
     };
@@ -30,11 +30,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${hidden ? 'hidden' : ''}`}>
       <div className="navbar-logo">
-        <img src="/logo512.svg" alt="A-THON Logo" />
-        <span className="logo-title">
-          A-THON<br />
-          <small>THERMOFORMING</small>
-        </span>
+        <img src="/logo-main.png" alt="A-THON Logo" />
       </div>
 
       <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -47,43 +43,41 @@ const Navbar = () => {
             to="/"
             className={location.pathname === '/' ? 'active' : ''}
             onClick={handleNavClick}
-          >HOME</Link>
+          >OUR COMPANY</Link>
         </li>
         <li>
           <Link
             to="/products"
             className={location.pathname === '/products' ? 'active' : ''}
             onClick={handleNavClick}
-          >PRODUCT & SERVICES</Link>
+          >GALLERY</Link>
         </li>
         <li>
           <Link
             to="/machinery"
             className={location.pathname === '/machinery' ? 'active' : ''}
             onClick={handleNavClick}
-          >MACHINERY</Link>
+          >SERVICE</Link>
         </li>
         <li className="dropdown">
           <Link
             to="/about"
             className={location.pathname.startsWith('/about') ? 'active' : ''}
             onClick={handleNavClick}
-          >ABOUT US </Link>
+          >INDUSTRY</Link>
         </li>
         <li className="mobile-contact">
           <Link to="/contact" onClick={handleNavClick}>CONTACT US</Link>
           </li>
       </ul>
 
-      {/* CONTACT Button for desktop */}
       <Link
         to="/contact"
         className="contact-btn desktop-only"
         onClick={handleNavClick}
-      >CONTACT US</Link>
+      >GET A FREE QUOTE</Link>
     </nav>
   );
 };
 
 export default Navbar;
-
