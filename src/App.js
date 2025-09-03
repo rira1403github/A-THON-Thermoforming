@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 import WhyUs from './components/whyUS';
 import ProjectSection from './components/ProjectSection';
 import Explore from './components/explore';
+import ScrollToTop from "./components/ScrollToTop"; 
 
 import Product from './pages/Product';
 import Machinery from './pages/Machinery';
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <ScrollToTop /> 
       <Navbar />
       <Routes>
         <Route
